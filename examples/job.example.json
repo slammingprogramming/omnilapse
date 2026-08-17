@@ -1,0 +1,20 @@
+{
+  "output": "out/mixed_timelapse.mp4",
+  "encoding": {
+    "fps": 30,
+    "width": 1920,
+    "crf": 18,
+    "preset": "medium"
+  },
+  "keep_intermediate": false,
+  "sources": [
+    { "type": "photos", "directory": "examples/data/morning_photos" },
+    { "type": "video", "path": "examples/data/afternoon_clip.mp4", "speed_factor": 8 },
+    {
+      "type": "stream",
+      "url": "rtsp://camera.local:554/stream",
+      "interval_seconds": 10,
+      "duration_seconds": 3600
+    }
+  ]
+}

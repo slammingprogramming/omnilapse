@@ -96,8 +96,8 @@ if it isn't on `PATH`.
 
 ## History
 
-The original prototype — a single script for turning a dated-filename photo
-folder into a timelapse — lives in
-[`Pictures to Timelapse Converter/timelapsegen.py`](Pictures%20to%20Timelapse%20Converter/timelapsegen.py).
-Its logic was generalized into `timelapse_generator.sources.photos` as part
-of building this into a full multi-source tool.
+This grew from an original prototype — a single script for turning a
+dated-filename photo folder into a timelapse. Its logic was generalized into
+`timelapse_generator.sources.photos` as part of building this into a full
+multi-source tool; the prototype script itself has been removed as
+superseded.

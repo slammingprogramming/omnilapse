@@ -1,0 +1,17 @@
+__pycache__/
+*.pyc
+*.egg-info/
+.pytest_cache/
+.venv/
+venv/
+build/
+dist/
+
+# generated media / working dirs (not source)
+*.mp4
+*.mov
+*.mkv
+frames.txt
+/work/
+/out/
+/captures/

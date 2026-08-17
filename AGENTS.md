@@ -108,9 +108,7 @@ Rough priority order for whoever picks this up next:
 
 ## History
 
-`Pictures to Timelapse Converter/timelapsegen.py` is the original prototype
-this project grew from — a single script, hardcoded to one photo-filename
+This project grew from a single-script prototype (`Pictures to Timelapse
+Converter/timelapsegen.py`, since removed) hardcoded to one photo-filename
 convention and one ffmpeg command. Its logic (dated-filename sorting +
-concat-demuxer encode) was generalized into `sources/photos.py`. The
-original file is left in place for reference/history and is not imported by
-the package.
+concat-demuxer encode) was generalized into `sources/photos.py`.

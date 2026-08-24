@@ -1,3 +1,5 @@
+# SPDX-License-Identifier: AGPL-3.0-or-later
+# Copyright (C) 2026 SlammingProgramming and contributors
 """Load a Job from a JSON job-spec file, for mixed multi-source timelapses.
 
 Example job file (see examples/job.example.json):

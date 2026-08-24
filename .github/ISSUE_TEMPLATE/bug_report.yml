@@ -1,0 +1,46 @@
+name: Bug report
+description: Something doesn't work the way it should
+labels: [bug]
+body:
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: What did you expect instead?
+    validations:
+      required: true
+  - type: textarea
+    id: command
+    attributes:
+      label: Command you ran
+      description: The full `timelapse-gen ...` command (or job file) that triggered it
+      render: shell
+    validations:
+      required: true
+  - type: textarea
+    id: output
+    attributes:
+      label: Output / error
+      description: Full output, including any ffmpeg stderr. Run with `-v` for more detail.
+      render: shell
+  - type: input
+    id: version
+    attributes:
+      label: timelapse-generator version
+      description: "`pip show timelapse-generator`, or the commit hash if installed from source"
+    validations:
+      required: true
+  - type: input
+    id: ffmpeg-version
+    attributes:
+      label: ffmpeg version
+      description: "`ffmpeg -version` (first line)"
+    validations:
+      required: true
+  - type: input
+    id: os
+    attributes:
+      label: OS
+      placeholder: "e.g. Windows 10, Ubuntu 22.04, macOS 14"
+    validations:
+      required: true

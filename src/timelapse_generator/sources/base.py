@@ -1,3 +1,5 @@
+# SPDX-License-Identifier: AGPL-3.0-or-later
+# Copyright (C) 2026 SlammingProgramming and contributors
 """Base types shared by every timelapse source."""
 
 from __future__ import annotations

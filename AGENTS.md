@@ -79,6 +79,32 @@ pytest
 timelapse-gen --help
 ```
 
+## License
+
+AGPL-3.0-or-later (see [LICENSE](LICENSE)). New source files should carry the
+two-line SPDX header used throughout `src/`:
+
+```python
+# SPDX-License-Identifier: AGPL-3.0-or-later
+# Copyright (C) <year> SlammingProgramming and contributors
+```
+
+## Pre-publish checklist
+
+A few placeholders were left because the GitHub org/user this repo will live
+under wasn't decided yet when this scaffolding was added. Before making the
+repo public, search for and fill in:
+
+- [ ] `OWNER` — GitHub org/user, in `pyproject.toml` (`[project.urls]`),
+      `README.md` (CI badge comment), `CHANGELOG.md` (compare/release links),
+      and `.github/ISSUE_TEMPLATE/config.yml`.
+- [ ] `[MAINTAINER CONTACT — TODO before publishing]` — a real contact
+      (email or GitHub username) in `CODE_OF_CONDUCT.md` and `SECURITY.md`.
+- [ ] Confirm GitHub's private vulnerability reporting is enabled for the
+      repo (Settings → Security), since `SECURITY.md` points to it first.
+- [ ] Uncomment/add the CI badge in `README.md` once Actions has run at
+      least once on the new remote.
+
 ## Roadmap / open items
 
 Rough priority order for whoever picks this up next:

@@ -1,0 +1,20 @@
+name: Feature request
+description: Suggest an idea, a new source type, or a CLI improvement
+labels: [enhancement]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: What problem does this solve?
+      description: What are you trying to do that the tool doesn't support today?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed solution
+      description: How you'd imagine this working (a new subcommand, a new source type, a new option, etc.)
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered

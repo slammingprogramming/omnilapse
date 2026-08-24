@@ -1,3 +1,5 @@
+# SPDX-License-Identifier: AGPL-3.0-or-later
+# Copyright (C) 2026 SlammingProgramming and contributors
 """Job orchestration: run one or more Sources and stitch them into one output file."""
 
 from __future__ import annotations

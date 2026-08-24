@@ -1,3 +1,5 @@
+# SPDX-License-Identifier: AGPL-3.0-or-later
+# Copyright (C) 2026 SlammingProgramming and contributors
 """Build a timelapse segment by sampling frames from a live feed (RTSP/HTTP/etc.)."""
 
 from __future__ import annotations

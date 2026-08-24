@@ -1,5 +1,10 @@
 # timelapse-generator
 
+<!-- TODO: once published, add a CI badge, e.g.
+![CI](https://github.com/OWNER/timelapse-generator/actions/workflows/ci.yml/badge.svg)
+-->
+[![License: AGPL v3+](https://img.shields.io/badge/License-AGPL%20v3%2B-blue.svg)](LICENSE)
+
 A single tool for turning things into timelapses: folders of photos, existing
 videos (sped up), live streams (RTSP/HTTP/...), or any mix of those stitched
 into one output clip.
@@ -84,6 +89,13 @@ debugging).
 See [AGENTS.md](AGENTS.md) for architecture notes, conventions, and the
 current roadmap.
 
+## Contributing
+
+Contributions are welcome — see [CONTRIBUTING.md](CONTRIBUTING.md) for dev
+setup and PR expectations, and [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md) for
+community guidelines. Security issues: see [SECURITY.md](SECURITY.md)
+instead of opening a public issue.
+
 ## Tests
 
 ```bash
@@ -101,3 +113,15 @@ dated-filename photo folder into a timelapse. Its logic was generalized into
 `timelapse_generator.sources.photos` as part of building this into a full
 multi-source tool; the prototype script itself has been removed as
 superseded.
+
+## License
+
+Licensed under the [GNU Affero General Public License v3.0 or later](LICENSE)
+(AGPL-3.0-or-later). Copyright (C) 2026 SlammingProgramming and contributors.
+
+The AGPL is a copyleft license: if you run a modified version of this tool as
+a network service that users interact with remotely, you must make the
+modified source available to those users (see LICENSE section 13). Simply
+running it locally, or distributing unmodified copies, carries no such
+requirement beyond the usual copyleft terms (share source of anything you
+distribute, under the same license).

@@ -105,9 +105,14 @@ two-line SPDX header used throughout `src/`:
       repo (Settings → Security), since `SECURITY.md` offers it as Option A.
 - [ ] Uncomment/add the CI badge in `README.md` once Actions has run at
       least once on the new remote.
-- [ ] Create the `slammingprogramming/omnilapse` repo on GitHub and push —
-      this repo currently only has a private mirror
-      (`[redacted-private-mirror]`).
+- [x] Created `slammingprogramming/omnilapse` on GitHub and pushed the full
+      history there (`git@github.com:slammingprogramming/omnilapse.git`,
+      branch `main`, force-pushed over GitHub's auto-generated
+      license-only init commit). The private mirror
+      (`[redacted-private-mirror]`, branch
+      `master`) is kept as `origin` and still gets pushed to separately —
+      push to both when making changes, e.g. `git push origin main:master`
+      and `git push github main`.
 
 ## Roadmap / open items
 

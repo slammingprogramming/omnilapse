@@ -36,7 +36,7 @@ This Code of Conduct applies within all community spaces, and also applies when 
 
 ## Enforcement
 
-Instances of abusive, harassing, or otherwise unacceptable behavior may be reported to the community leaders responsible for enforcement at <!-- TODO: fill in a reporting contact (email or GitHub username) before publishing -->`[MAINTAINER CONTACT — TODO before publishing]`. All complaints will be reviewed and investigated promptly and fairly.
+Instances of abusive, harassing, or otherwise unacceptable behavior may be reported to the community leaders responsible for enforcement via direct contact over [SimpleX](https://simplex.chat) at `https://smp14.simplex.im/a#3gZ-zeHs4QrFZKLAN0o3SC_XQJXhj1eYBVTO_c0FAtg`. See [SECURITY.md](SECURITY.md#reporting-a-vulnerability) for the identity-verification process used on first contact — the same channel and process apply to conduct reports, not just security reports. All complaints will be reviewed and investigated promptly and fairly.
 
 All community leaders are obligated to respect the privacy and security of the reporter of any incident.
 

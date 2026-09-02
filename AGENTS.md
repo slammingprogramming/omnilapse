@@ -97,11 +97,12 @@ two-line SPDX header used throughout `src/`:
 - [x] Renamed the project from `timelapse-generator` to `omnilapse`
       (package, CLI command, and all doc references) — chosen to stay
       accurate as more source types (live and non-live) get added.
-- [ ] `[MAINTAINER CONTACT — TODO before publishing]` — a real contact
-      (email or GitHub username) in `CODE_OF_CONDUCT.md` and `SECURITY.md`.
-      Left unset deliberately (privacy) — decide before publishing.
+- [x] Maintainer contact resolved: direct contact via SimpleX (with a
+      public-key-signature identity verification over a GitHub issue on
+      first contact) in `CODE_OF_CONDUCT.md` and `SECURITY.md`, alongside
+      GitHub's own private vulnerability reporting as the simpler option.
 - [ ] Confirm GitHub's private vulnerability reporting is enabled for the
-      repo (Settings → Security), since `SECURITY.md` points to it first.
+      repo (Settings → Security), since `SECURITY.md` offers it as Option A.
 - [ ] Uncomment/add the CI badge in `README.md` once Actions has run at
       least once on the new remote.
 - [ ] Create the `slammingprogramming/omnilapse` repo on GitHub and push —

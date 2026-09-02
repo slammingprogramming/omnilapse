@@ -38,7 +38,7 @@ omnilapse = "omnilapse.cli:main"
 Homepage = "https://github.com/slammingprogramming/omnilapse"
 Repository = "https://github.com/slammingprogramming/omnilapse"
 Issues = "https://github.com/slammingprogramming/omnilapse/issues"
-Changelog = "https://github.com/slammingprogramming/omnilapse/blob/master/CHANGELOG.md"
+Changelog = "https://github.com/slammingprogramming/omnilapse/blob/main/CHANGELOG.md"
 
 [tool.setuptools.packages.find]
 where = ["src"]

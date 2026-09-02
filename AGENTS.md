@@ -89,30 +89,29 @@ two-line SPDX header used throughout `src/`:
 # Copyright (C) <year> SlammingProgramming and contributors
 ```
 
-## Pre-publish checklist
+## Publishing safety
 
-- [x] GitHub org/user resolved: `slammingprogramming`, filled in across
-      `pyproject.toml`, `README.md`, `CHANGELOG.md`, and
-      `.github/ISSUE_TEMPLATE/config.yml`.
-- [x] Renamed the project from `timelapse-generator` to `omnilapse`
-      (package, CLI command, and all doc references) — chosen to stay
-      accurate as more source types (live and non-live) get added.
-- [x] Maintainer contact resolved: direct contact via SimpleX (with a
-      public-key-signature identity verification over a GitHub issue on
-      first contact) in `CODE_OF_CONDUCT.md` and `SECURITY.md`, alongside
-      GitHub's own private vulnerability reporting as the simpler option.
-- [ ] Confirm GitHub's private vulnerability reporting is enabled for the
-      repo (Settings → Security), since `SECURITY.md` offers it as Option A.
-- [ ] Uncomment/add the CI badge in `README.md` once Actions has run at
-      least once on the new remote.
-- [x] Created `slammingprogramming/omnilapse` on GitHub and pushed the full
-      history there (`git@github.com:slammingprogramming/omnilapse.git`,
-      branch `main`, force-pushed over GitHub's auto-generated
-      license-only init commit). The private mirror
-      (`[redacted-private-mirror]`, branch
-      `master`) is kept as `origin` and still gets pushed to separately —
-      push to both when making changes, e.g. `git push origin main:master`
-      and `git push github main`.
+This repository's history is public (GitHub). Before pushing anything to a
+public remote — not just once, but every time:
+
+- [ ] Sweep tracked files and the *full* commit history (not just the diff)
+      for names, personal emails, local filesystem paths, internal
+      hostnames, or references to any private infrastructure.
+      `git log --all --format="%an <%ae> / %cn <%ce>"` for authorship;
+      `git grep` across tracked files for anything that looks personal.
+- [ ] Never name or reference a private mirror/remote (host, path, org/team
+      name) in any tracked file, commit message, or doc — including this
+      one. If a workflow note needs that detail, keep it out of git
+      entirely.
+- [ ] Get the repo owner's explicit go-ahead for that specific push before
+      pushing to a public remote — a prior push being fine doesn't imply
+      the next one is.
+
+Remaining one-time setup (needs the GitHub web UI, not git):
+
+- [ ] Confirm GitHub's private vulnerability reporting is enabled
+      (Settings → Security), since `SECURITY.md` offers it as Option A.
+- [ ] Add a CI badge to `README.md` once Actions has run at least once.
 
 ## Roadmap / open items
 

@@ -13,7 +13,7 @@ body:
     id: command
     attributes:
       label: Command you ran
-      description: The full `timelapse-gen ...` command (or job file) that triggered it
+      description: The full `omnilapse ...` command (or job file) that triggered it
       render: shell
     validations:
       required: true
@@ -26,8 +26,8 @@ body:
   - type: input
     id: version
     attributes:
-      label: timelapse-generator version
-      description: "`pip show timelapse-generator`, or the commit hash if installed from source"
+      label: omnilapse version
+      description: "`pip show omnilapse`, or the commit hash if installed from source"
     validations:
       required: true
   - type: input

@@ -3,7 +3,7 @@ from pathlib import Path
 
 import pytest
 
-from timelapse_generator import ffmpeg_utils
+from omnilapse import ffmpeg_utils
 
 
 def test_find_binary_raises_when_missing(monkeypatch):

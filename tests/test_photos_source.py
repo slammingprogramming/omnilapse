@@ -3,10 +3,10 @@ from pathlib import Path
 
 import pytest
 
-from timelapse_generator import ffmpeg_utils
-from timelapse_generator.config import EncodingConfig
-from timelapse_generator.sources.base import BuildContext
-from timelapse_generator.sources.photos import PhotoSource
+from omnilapse import ffmpeg_utils
+from omnilapse.config import EncodingConfig
+from omnilapse.sources.base import BuildContext
+from omnilapse.sources.photos import PhotoSource
 
 
 def test_list_images_missing_directory(tmp_path: Path):

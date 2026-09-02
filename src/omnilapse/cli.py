@@ -1,6 +1,6 @@
 # SPDX-License-Identifier: AGPL-3.0-or-later
 # Copyright (C) 2026 SlammingProgramming and contributors
-"""Command-line interface for timelapse-generator.
+"""Command-line interface for omnilapse.
 
 Subcommands:
   photos  - build a timelapse from a folder of still images
@@ -23,7 +23,7 @@ from .jobfile import load_job
 from .pipeline import Job
 from .sources import PhotoSource, StreamSource, VideoSource
 
-log = logging.getLogger("timelapse_generator")
+log = logging.getLogger("omnilapse")
 
 
 def _add_encoding_args(parser: argparse.ArgumentParser) -> None:
@@ -118,7 +118,7 @@ def cmd_job(args: argparse.Namespace) -> Path:
 
 
 def build_parser() -> argparse.ArgumentParser:
-    parser = argparse.ArgumentParser(prog="timelapse-gen", description=__doc__.splitlines()[0])
+    parser = argparse.ArgumentParser(prog="omnilapse", description=__doc__.splitlines()[0])
     parser.add_argument("-v", "--verbose", action="store_true", help="enable debug logging")
     subparsers = parser.add_subparsers(dest="command", required=True)
 

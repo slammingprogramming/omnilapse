@@ -1,7 +1,7 @@
-# timelapse-generator
+# omnilapse
 
 <!-- TODO: once published, add a CI badge, e.g.
-![CI](https://github.com/OWNER/timelapse-generator/actions/workflows/ci.yml/badge.svg)
+![CI](https://github.com/slammingprogramming/omnilapse/actions/workflows/ci.yml/badge.svg)
 -->
 [![License: AGPL v3+](https://img.shields.io/badge/License-AGPL%20v3%2B-blue.svg)](LICENSE)
 
@@ -24,14 +24,14 @@ concatenated with a fast stream-copy at the end.
 pip install -e ".[dev]"
 ```
 
-This installs the `timelapse-gen` CLI.
+This installs the `omnilapse` CLI.
 
 ## Usage
 
 ### From a folder of photos
 
 ```bash
-timelapse-gen photos ./my_photos -o timelapse.mp4 --fps 30
+omnilapse photos ./my_photos -o timelapse.mp4 --fps 30
 ```
 
 Photos are sorted automatically: if filenames contain a
@@ -41,9 +41,9 @@ Override with `--sort-by {auto,name,mtime,pattern}` and `--pattern <regex>`.
 ### From an existing video (speed it up)
 
 ```bash
-timelapse-gen video long_recording.mp4 -o timelapse.mp4 --speed-factor 20
+omnilapse video long_recording.mp4 -o timelapse.mp4 --speed-factor 20
 # or target a specific output length instead of a fixed speed:
-timelapse-gen video long_recording.mp4 -o timelapse.mp4 --target-duration 30
+omnilapse video long_recording.mp4 -o timelapse.mp4 --target-duration 30
 ```
 
 ### From a live stream (RTSP/HTTP/...)
@@ -52,7 +52,7 @@ Samples one frame every `--interval` seconds until `--duration` or
 `--max-frames` is hit, then encodes them into a clip.
 
 ```bash
-timelapse-gen stream rtsp://user:pass@camera.local/stream \
+omnilapse stream rtsp://user:pass@camera.local/stream \
   --interval 10 --duration 3600 -o timelapse.mp4
 ```
 
@@ -62,7 +62,7 @@ Describe the sources in a JSON job file and run it — see
 [`examples/job.example.json`](examples/job.example.json):
 
 ```bash
-timelapse-gen job my_job.json
+omnilapse job my_job.json
 ```
 
 ```json
@@ -110,7 +110,7 @@ if it isn't on `PATH`.
 
 This grew from an original prototype — a single script for turning a
 dated-filename photo folder into a timelapse. Its logic was generalized into
-`timelapse_generator.sources.photos` as part of building this into a full
+`omnilapse.sources.photos` as part of building this into a full
 multi-source tool; the prototype script itself has been removed as
 superseded.
 

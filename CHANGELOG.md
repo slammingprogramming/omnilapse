@@ -9,6 +9,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Changed
 
+- Renamed the project from `timelapse-generator` to **omnilapse** (package,
+  CLI command `omnilapse`, and repo) — chosen to stay accurate as more
+  source types, live and non-live, get added later.
 - Licensed under AGPL-3.0-or-later; added standard OSS project scaffolding
   (CONTRIBUTING, CODE_OF_CONDUCT, SECURITY, issue/PR templates).
 
@@ -16,7 +19,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
-- Initial multi-source timelapse tool: `timelapse-gen` CLI with `photos`,
+- Initial multi-source timelapse tool: `omnilapse` CLI with `photos`,
   `video`, `stream`, and `job` subcommands.
 - `PhotoSource`, `VideoSource`, `StreamSource`, each normalizing to a shared
   `EncodingConfig` and producing an intermediate clip via ffmpeg.
@@ -34,5 +37,5 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   (`Pictures to Timelapse Converter/timelapsegen.py`), superseded by
   `sources/photos.py`.
 
-[Unreleased]: https://github.com/OWNER/timelapse-generator/compare/v0.1.0...HEAD
-[0.1.0]: https://github.com/OWNER/timelapse-generator/releases/tag/v0.1.0
+[Unreleased]: https://github.com/slammingprogramming/omnilapse/compare/v0.1.0...HEAD
+[0.1.0]: https://github.com/slammingprogramming/omnilapse/releases/tag/v0.1.0

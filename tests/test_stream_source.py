@@ -2,10 +2,10 @@ from pathlib import Path
 
 import pytest
 
-from timelapse_generator import ffmpeg_utils
-from timelapse_generator.config import EncodingConfig
-from timelapse_generator.sources.base import BuildContext
-from timelapse_generator.sources.stream import StreamSource
+from omnilapse import ffmpeg_utils
+from omnilapse.config import EncodingConfig
+from omnilapse.sources.base import BuildContext
+from omnilapse.sources.stream import StreamSource
 
 
 def test_requires_duration_or_max_frames():

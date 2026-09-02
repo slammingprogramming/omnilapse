@@ -31,7 +31,7 @@ and coordinated disclosure timeline before any public write-up.
 
 ## Scope notes
 
-`timelapse-gen` shells out to `ffmpeg`/`ffprobe` with paths and URLs you give
+`omnilapse` shells out to `ffmpeg`/`ffprobe` with paths and URLs you give
 it — it does not fetch or execute anything on its own. Reports related to how
 untrusted input (e.g. a job file or stream URL from someone else) is passed
 to those subprocesses are in scope; issues purely within `ffmpeg` itself

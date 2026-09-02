@@ -17,14 +17,14 @@ Requirements: Python 3.9+, and [ffmpeg](https://ffmpeg.org/download.html)
 
 ```bash
 git clone <this repo>
-cd timelapse-generator
+cd omnilapse
 pip install -e ".[dev]"
 ```
 
 Run the CLI locally:
 
 ```bash
-timelapse-gen --help
+omnilapse --help
 ```
 
 Run the tests:

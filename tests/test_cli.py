@@ -1,7 +1,7 @@
 from pathlib import Path
 
-from timelapse_generator import cli, ffmpeg_utils
-from timelapse_generator.pipeline import Job
+from omnilapse import cli, ffmpeg_utils
+from omnilapse.pipeline import Job
 
 
 def test_photos_command_parses_defaults(tmp_path: Path):

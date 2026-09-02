@@ -15,3 +15,11 @@ frames.txt
 /work/
 /out/
 /captures/
+
+# AI coding assistant local state — never intended to be committed anywhere.
+.claude/
+.cursor/
+.windsurf/
+.aider*
+CLAUDE.local.md
+*.agent-session.json

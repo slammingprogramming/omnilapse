@@ -3,8 +3,8 @@ from pathlib import Path
 
 import pytest
 
-from timelapse_generator.jobfile import load_job
-from timelapse_generator.sources import PhotoSource, StreamSource, VideoSource
+from omnilapse.jobfile import load_job
+from omnilapse.sources import PhotoSource, StreamSource, VideoSource
 
 
 def write_job(tmp_path: Path, data: dict) -> Path:

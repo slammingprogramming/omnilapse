@@ -3,7 +3,7 @@ requires = ["setuptools>=68"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "timelapse-generator"
+name = "omnilapse"
 version = "0.1.0"
 description = "Turn photos, videos, mixed sources, and live streams (RTSP/HTTP) into timelapses."
 readme = "README.md"
@@ -32,14 +32,13 @@ dependencies = []
 dev = ["pytest>=7.0"]
 
 [project.scripts]
-timelapse-gen = "timelapse_generator.cli:main"
+omnilapse = "omnilapse.cli:main"
 
-# TODO: replace OWNER with the actual GitHub org/user once the repo is published.
 [project.urls]
-Homepage = "https://github.com/OWNER/timelapse-generator"
-Repository = "https://github.com/OWNER/timelapse-generator"
-Issues = "https://github.com/OWNER/timelapse-generator/issues"
-Changelog = "https://github.com/OWNER/timelapse-generator/blob/master/CHANGELOG.md"
+Homepage = "https://github.com/slammingprogramming/omnilapse"
+Repository = "https://github.com/slammingprogramming/omnilapse"
+Issues = "https://github.com/slammingprogramming/omnilapse/issues"
+Changelog = "https://github.com/slammingprogramming/omnilapse/blob/master/CHANGELOG.md"
 
 [tool.setuptools.packages.find]
 where = ["src"]

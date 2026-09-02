@@ -4,7 +4,7 @@ Notes for anyone (human or agent) picking up work on this repo.
 
 ## What this project is
 
-A single tool, `timelapse-gen`, that builds timelapses from any of:
+A single tool, `omnilapse`, that builds timelapses from any of:
 - a folder of photos
 - an existing video (sped up)
 - a live stream (RTSP/HTTP/...), sampled at an interval
@@ -17,7 +17,7 @@ job is to build the right ffmpeg command lines and stitch results together.
 ## Architecture
 
 ```
-src/timelapse_generator/
+src/omnilapse/
   config.py        EncodingConfig — the shared fps/resolution/codec every
                     source is normalized to, so final concatenation can be a
                     cheap stream-copy instead of a second re-encode.
@@ -76,7 +76,7 @@ from-a-different-tool source): implement `Source.build()`, add a
 ```bash
 pip install -e ".[dev]"
 pytest
-timelapse-gen --help
+omnilapse --help
 ```
 
 ## License
@@ -91,19 +91,22 @@ two-line SPDX header used throughout `src/`:
 
 ## Pre-publish checklist
 
-A few placeholders were left because the GitHub org/user this repo will live
-under wasn't decided yet when this scaffolding was added. Before making the
-repo public, search for and fill in:
-
-- [ ] `OWNER` — GitHub org/user, in `pyproject.toml` (`[project.urls]`),
-      `README.md` (CI badge comment), `CHANGELOG.md` (compare/release links),
-      and `.github/ISSUE_TEMPLATE/config.yml`.
+- [x] GitHub org/user resolved: `slammingprogramming`, filled in across
+      `pyproject.toml`, `README.md`, `CHANGELOG.md`, and
+      `.github/ISSUE_TEMPLATE/config.yml`.
+- [x] Renamed the project from `timelapse-generator` to `omnilapse`
+      (package, CLI command, and all doc references) — chosen to stay
+      accurate as more source types (live and non-live) get added.
 - [ ] `[MAINTAINER CONTACT — TODO before publishing]` — a real contact
       (email or GitHub username) in `CODE_OF_CONDUCT.md` and `SECURITY.md`.
+      Left unset deliberately (privacy) — decide before publishing.
 - [ ] Confirm GitHub's private vulnerability reporting is enabled for the
       repo (Settings → Security), since `SECURITY.md` points to it first.
 - [ ] Uncomment/add the CI badge in `README.md` once Actions has run at
       least once on the new remote.
+- [ ] Create the `slammingprogramming/omnilapse` repo on GitHub and push —
+      this repo currently only has a private mirror
+      (`[redacted-private-mirror]`).
 
 ## Roadmap / open items
 

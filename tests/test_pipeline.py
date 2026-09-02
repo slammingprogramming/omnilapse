@@ -2,10 +2,10 @@ from pathlib import Path
 
 import pytest
 
-from timelapse_generator import ffmpeg_utils
-from timelapse_generator.config import EncodingConfig
-from timelapse_generator.pipeline import Job
-from timelapse_generator.sources.base import BuildContext, Source
+from omnilapse import ffmpeg_utils
+from omnilapse.config import EncodingConfig
+from omnilapse.pipeline import Job
+from omnilapse.sources.base import BuildContext, Source
 
 
 class StubSource(Source):

@@ -15,7 +15,7 @@ from . import ffmpeg_utils
 from .config import EncodingConfig
 from .sources.base import BuildContext, Source
 
-log = logging.getLogger("timelapse_generator")
+log = logging.getLogger("omnilapse")
 
 
 @dataclass

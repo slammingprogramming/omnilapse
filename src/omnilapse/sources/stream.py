@@ -27,7 +27,7 @@ class StreamSource(Source):
             raise ValueError(
                 "StreamSource needs duration_seconds and/or max_frames so capture "
                 "has a defined end (a job must terminate). For an open-ended capture, "
-                "use `timelapse-gen stream` directly and stop it with Ctrl+C."
+                "use `omnilapse stream` directly and stop it with Ctrl+C."
             )
         if self.interval_seconds <= 0:
             raise ValueError("interval_seconds must be > 0")

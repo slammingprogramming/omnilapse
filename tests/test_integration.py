@@ -2,9 +2,9 @@
 
 from pathlib import Path
 
-from timelapse_generator.config import EncodingConfig
-from timelapse_generator.pipeline import Job
-from timelapse_generator.sources import PhotoSource, StreamSource, VideoSource
+from omnilapse.config import EncodingConfig
+from omnilapse.pipeline import Job
+from omnilapse.sources import PhotoSource, StreamSource, VideoSource
 
 from .conftest import make_test_image, make_test_video, requires_ffmpeg
 

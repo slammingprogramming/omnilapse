@@ -1,9 +1,18 @@
 # omnilapse
 
-<!-- TODO: once published, add a CI badge, e.g.
-![CI](https://github.com/slammingprogramming/omnilapse/actions/workflows/ci.yml/badge.svg)
--->
+**Turn photos, video, and live streams into timelapses — any source, any mix, one tool.**
+
+[![CI](https://github.com/slammingprogramming/omnilapse/actions/workflows/ci.yml/badge.svg)](https://github.com/slammingprogramming/omnilapse/actions/workflows/ci.yml)
 [![License: AGPL v3+](https://img.shields.io/badge/License-AGPL%20v3%2B-blue.svg)](LICENSE)
+[![Python 3.9+](https://img.shields.io/badge/python-3.9%2B-blue.svg)](pyproject.toml)
+[![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg)](CODE_OF_CONDUCT.md)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
+
+[![Powered by FFmpeg](https://img.shields.io/badge/powered%20by-ffmpeg-007808.svg)](https://ffmpeg.org)
+[![Platform](https://img.shields.io/badge/platform-Windows%20%7C%20macOS%20%7C%20Linux-lightgrey.svg)](#requirements)
+![Last commit](https://img.shields.io/github/last-commit/slammingprogramming/omnilapse)
+![Open issues](https://img.shields.io/github/issues/slammingprogramming/omnilapse)
+![Stars](https://img.shields.io/github/stars/slammingprogramming/omnilapse?style=flat)
 
 A single tool for turning things into timelapses: folders of photos, existing
 videos (sped up), live streams (RTSP/HTTP/...), or any mix of those stitched
@@ -12,6 +21,38 @@ into one output clip.
 Under the hood it's a thin, uniform layer over `ffmpeg`. Every input is
 normalized to a shared resolution/fps/codec and, when there's more than one,
 concatenated with a fast stream-copy at the end.
+
+## Contents
+
+- [Features](#features)
+- [Requirements](#requirements)
+- [Install](#install)
+- [Usage](#usage)
+  - [Photos](#from-a-folder-of-photos)
+  - [Video](#from-an-existing-video-speed-it-up)
+  - [Live stream](#from-a-live-stream-rtsphttp)
+  - [Mixed sources](#mixed-sources-photos--video--stream-in-one-output)
+  - [Common options](#common-options)
+- [Project layout](#project-layout)
+- [Contributing](#contributing)
+- [Tests](#tests)
+- [History](#history)
+- [License](#license)
+
+## Features
+
+- **Multiple source types, one pipeline** — photos, existing video, and live
+  RTSP/HTTP streams all normalize through the same `Source` interface.
+- **Mix sources in a single output** — combine a photo folder, a sped-up
+  clip, and a live-stream capture into one continuous timelapse via a JSON
+  job file.
+- **Fast concatenation** — sources are stitched with an `ffmpeg` stream-copy,
+  not a second re-encode.
+- **No hidden dependencies** — pure stdlib Python plus `ffmpeg`/`ffprobe` on
+  your `PATH`. Nothing else to install.
+- **Cross-platform** — Windows, macOS, and Linux, anywhere `ffmpeg` runs.
+- **Tested** — unit tests mock `ffmpeg`; integration tests exercise the real
+  binary and are skipped automatically if it's missing.
 
 ## Requirements
 

@@ -111,7 +111,6 @@ Remaining one-time setup (needs the GitHub web UI, not git):
 
 - [ ] Confirm GitHub's private vulnerability reporting is enabled
       (Settings → Security), since `SECURITY.md` offers it as Option A.
-- [ ] Add a CI badge to `README.md` once Actions has run at least once.
 
 ## Roadmap / open items
 

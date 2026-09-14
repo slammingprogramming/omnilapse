@@ -23,3 +23,7 @@ frames.txt
 .aider*
 CLAUDE.local.md
 *.agent-session.json
+
+# AGENTS.md is intentionally private-repo-only on this branch — never
+# re-add it here, even accidentally via a broad `git add`.
+/AGENTS.md
